@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO 및 메타 태그 최적화 -->
+    <title>제주 자율주행 난이도 히트맵 - AI 안전 도우미</title>
+    <meta name="description" content="제주도 전역의 지리적 요소와 실시간 기상을 바탕으로 자율주행 난이도를 분석하고, Google Gemini AI의 전문적인 안전 가이드를 제공하는 프리미엄 웹 서비스입니다." />
+    <meta name="keywords" content="제주도, 자율주행, 히트맵, 교통사고, 급커브, Gemini AI, 인공지능 분석" />
+    <meta name="author" content="Antigravity AI" />
+
+    <!-- Google 폰트 적용 (Outfit 및 한국어 폰트 Noto Sans KR) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Leaflet 지도 스타일 CDN 연동 (지도를 그리기 위해 필수적입니다) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""/>
+    <!-- Leaflet.heat 플러그인 연동 (히트맵 가시화를 위해 필수로 탑재해야 합니다) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- React 코드 진입점 연결 -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
